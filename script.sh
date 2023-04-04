@@ -20,7 +20,7 @@ else
     pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 torchaudio==0.13.1 torchtext==0.14.1 torchdata==0.5.1 --extra-index-url https://download.pytorch.org/whl/cu116 -U
     pip install -q xformers==0.0.16 triton==2.0.0 -U
 
-    git clone -b v2.1 https://github.com/camenduru/stable-diffusion-webui
+    git clone -b v2.1 https://github.com/camenduru/stable-diffusion-webui "/content/drive/My Drive/Colab Notebooks/stable-diffusion-webui"
     git clone https://huggingface.co/embed/negative "/content/drive/My Drive/Colab Notebooks/stable-diffusion-webui/embeddings/negative"
     git clone https://huggingface.co/embed/lora "/content/drive/My Drive/Colab Notebooks/stable-diffusion-webui/models/Lora/positive"
     aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/embed/upscale/resolve/main/4x-UltraSharp.pth -d "/content/drive/My Drive/Colab Notebooks/stable-diffusion-webui/models/ESRGAN" -o 4x-UltraSharp.pth
