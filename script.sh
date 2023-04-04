@@ -72,7 +72,7 @@ else
     mkdir -p "/content/drive/MyDrive/Colab Notebooks/stable-diffusion-webui/extensions/deforum-for-automatic1111-webui/models"
     touch "/content/drive/MyDrive/Colab Notebooks/stable-diffusion-webui/"
 
-    touch $FILE
+    touch "$FILE"
 fi
 
 python launch.py --listen --xformers --enable-insecure-extension-access --theme dark --gradio-queue --multiple
