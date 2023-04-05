@@ -6,10 +6,6 @@ if test -f "$FILE"; then
 else
     echo "$FILE not exists."
 
-    apt -y install -qq aria2
-    pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 torchaudio==0.13.1 torchtext==0.14.1 torchdata==0.5.1 --extra-index-url https://download.pytorch.org/whl/cu116 -U
-    pip install -q xformers==0.0.16 triton==2.0.0 -U
-
     #git clone -b v2.1 https://github.com/camenduru/stable-diffusion-webui "/content/drive/MyDrive/Colab Notebooks/stable-diffusion-webui"
     cd "/content/drive/MyDrive/Colab Notebooks/"
     git clone -b v2.1 https://github.com/camenduru/stable-diffusion-webui
