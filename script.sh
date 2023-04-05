@@ -75,5 +75,5 @@ else
     touch "$FILE"
 fi
 
-%cd "/content/drive/MyDrive/Colab Notebooks/stable-diffusion-webui"
+cd "/content/drive/MyDrive/Colab Notebooks/stable-diffusion-webui"
 python launch.py --listen --xformers --enable-insecure-extension-access --theme dark --gradio-queue --multiple
